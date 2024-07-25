@@ -1,0 +1,147 @@
+*{
+    text-decoration: none;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    font-family: "Nunito", sans-serif;
+}
+
+.navbar {
+    background: #243D29;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 80px;
+    width: 100%;
+    z-index: 1000; /* Ensure it's above other content */
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0;
+    left: 0;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribute items horizontally */
+    width: 100%;
+}
+
+.logo a{
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+ul{
+    margin-right: 30px;
+}
+
+li{
+
+    list-style: none; display: inline-block;
+}
+
+li a {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none; /* Remove underline by default */
+    padding: 10px 20px; /* Add padding to create the box effect */
+    display: inline-block; /* Ensure padding and background color are applied correctly */
+    background-color: transparent; /* Default background color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for color changes */
+    border-radius: 5px; /* Optional: rounded corners for the box */
+}
+
+li a:hover {
+    color: #ffffff; /* Change to your desired text color on hover */
+    background-color: #002707; /* Change to your desired background color on hover */
+}
+
+button{
+    margin-left: 10px;
+    background-color: #CDE9E1;
+    border-radius: 10px;
+    padding: 10px;
+    width: 130px;
+    border: none;
+    margin-right: 15px;
+}
+
+button a {
+    color: #243D29;
+    font-family: "Nunito", sans-serif;
+font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.hamburger-icon{
+    display: none;
+}
+
+.mobile-menu {
+    display: none; /* Hide mobile menu by default */
+    position: absolute;
+    top: 80px; /* Adjust based on your navbar height */
+    right: 0;
+    background: #243D29;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Display menu items in a column */
+}
+
+.mobile-menu li {
+    margin: 10px 0;
+}
+
+.mobile-menu a {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+       display: flex;
+    }
+
+    .nav-links {
+        display: none; /* Hide the navigation links on mobile */
+    }
+
+    .hamburger-icon {
+        display: block; /* Show hamburger icon on mobile */
+        margin-right: 40px; /* Adjust margin as needed */
+        cursor: pointer; /* Add cursor pointer for better UX */
+    }
+
+    .mobile-menu.active {
+        display: block; /* Show mobile menu when active */
+    }
+
+    button{
+
+        background-color: #CDE9E1;
+        border-radius: 10px;
+        padding: 10px 20px; /* Padding for button */
+        width: 140px;
+        border: none;
+
+        margin: 20px auto; /* Center button horizontally */
+    }
+    
+}

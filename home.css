@@ -1,0 +1,677 @@
+
+
+.home-header{
+    padding-top: 80px; /* Same height as the navbar */
+    position: relative;
+    margin-bottom: 100px;
+
+
+}
+
+.home-header img{
+    max-width: 100%;
+    height: auto;
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.header-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    font-size: 4vw;
+    font-family: "Kings", cursive;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 0; /* Start with the text hidden */
+    animation: fadeIn 2s ease-in forwards; /* Apply the fade-in animation */
+}
+
+.row {
+    width: 90%;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px 50px;
+    margin: 0 auto;
+
+}
+
+.row .left {
+    overflow: hidden;
+    /* Ensure dimensions or max-dimensions are set for .left */
+    width: 100%; /* Adjust as necessary */
+ 
+}
+
+.row .left .img {
+    
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire .left container */
+}
+
+  
+
+.row .right{
+    display: flex;
+    align-items: center;
+}
+  
+.text{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    line-height: 1.2; /* Adjust line height for better readability */
+}
+
+.text h4{
+    margin: 0%;
+    padding-bottom: 14px;
+    font-size: 22px;
+    font-weight: 900;
+    color:  #243D29;
+}
+
+.text h2{
+    margin: 0%;
+    padding: 0%;    font-size: 32px;
+    font-weight: 300;
+    color:#486A4D;
+    line-height: 0.9;
+
+
+}
+  .text h3{
+    margin: 0%;
+    padding-top: 0%;
+    padding-bottom: 12px;
+        font-size: 40px;
+    font-weight: 800;
+    color:  #243D29;
+
+
+  }
+
+  .text p{
+    margin: 0%;
+    padding: 0%;
+    font-size: 16px;
+
+  }
+
+  @media (max-width: 768px) {
+    .row {
+        width: 90%; /* Adjust width to 90% */
+        margin: 0 auto; /* Center the row horizontally */
+        padding: 0 5%; /* Add padding on both sides to ensure equal spacing */
+        display: grid; /* Ensure grid display */
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .row .left .img {
+        margin: 0 auto; /* Center the image horizontally */
+    }
+
+    .header-text {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        font-size: 30px;
+        font-family: "Kings", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+
+  .our-services {   
+    text-align: center;
+margin-bottom: 20px;
+     font-size: 50px;
+    font-family: "Kings", cursive;
+    font-weight: 400;
+    font-style: normal
+
+    ;}
+
+    .container2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        width: 100%;
+        background-color: #486A4D;
+        margin-bottom: 100px;
+        overflow: hidden; /* Prevent horizontal overflow */
+        padding: 0 15px; /* Add padding to avoid overflow caused by flex content */
+    }
+    
+    .box {
+        width: 300px;
+        height: 300px;
+        background-color: #f0f0f0;
+        border-radius: 10px;
+        margin-right: 50px;
+        box-shadow: 14px 14px 2px #243D29;
+    }
+    
+    .box:last-child {
+        margin-right: 50px; /* Remove margin from the last box */
+    }
+    
+    .boxtext{
+        padding-left: 7px;
+        padding-top: 10px;
+    }
+ 
+    
+    .boxtext h5 {
+        font-size: 20px;
+        font-family: "Inter", sans-serif;
+        font-weight: 800;
+        margin: 20px;
+color: #001f06;
+        
+
+    }
+    
+    .boxtext p {
+        font-size: 14px;
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        margin: 20px;
+
+
+    }
+    
+    .box img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        opacity: 0.5;
+    }
+    
+    .special {
+        position: relative;
+        display: flex;
+      
+    }
+    
+    .special img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        opacity: 0.5;
+        z-index: 1;
+    }
+    
+    .special .boxtext {
+        position: relative;
+        z-index: 2;
+
+    }
+
+    @media (max-width: 768px) {
+        .container2 {
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Display boxes in a column */
+            height: auto; /* Adjust height as needed */
+            padding: 20px; /* Add padding for spacing */
+        }
+    
+        .box {
+            
+            margin-bottom: 40px; /* Space between boxes */
+            margin-right: 40px; /* Reset margin */
+        }
+    }
+
+        @media (max-width: 1000px) {
+        .container2 {
+            
+            height: auto; /* Adjust height as needed */
+            padding: 20px; /* Add padding for spacing */
+        }
+    
+        .boxtext h5 {
+            font-size: 18px;
+            font-family: "Inter", sans-serif;
+            font-weight: 800;
+            margin: 20px;
+    color: #001f06;
+            
+    
+        }
+        
+        .boxtext p {
+            font-size: 12px;
+            font-family: "Inter", sans-serif;
+            font-weight: 500;
+            margin: 20px;
+    
+    
+        }
+    }
+
+    .our-affliations {   
+        text-align: center;
+        margin-bottom: 0%;
+         font-size: 30px;
+        font-family: "Kings", cursive;
+        font-weight: 400;
+        font-style: normal;}
+    
+        
+        .container3 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .certification-group, .registered-group, .team{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .certification-group .box1, .registered-group .box1 {
+            margin: 10px;
+        }
+        
+        .our-affliations {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .box1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+
+        
+
+        .container3 .box1:nth-of-type(3) img {
+            /* Your CSS properties here */
+           padding-top: 24px; /* Example property */
+           padding-left: 10px;
+        }
+
+        @media (max-width: 1024px) {
+            .container3 {
+                width: 100%;
+                height: 800px;
+                flex-wrap: wrap; /* Allow items to wrap */
+            }
+        
+            .box1 img {
+               height: 150px;
+               width: 200px;
+            }
+            
+           
+        }
+
+        @media (max-width: 768px) {
+            .container3 {
+                width: 100%;
+                display: flex;
+                flex-direction: column; /* Stack boxes in a column for mobile view */
+                align-items: center; /* Center align items vertically */
+                justify-content: center;
+                height: auto; /* Adjust height to fit content */
+            }
+        
+            .box1 {
+                width: 80%; /* Adjust width to take full width on mobile */
+                margin: 10px 0; /* Adjust margin for spacing between boxes */
+            }
+        }
+        
+        .why-us{
+            position: relative;
+        }
+.why-us img{
+    width: 100%;
+    height: 500px;
+    background-color: #002808;
+    background-blend-mode: multiply;
+    
+}
+
+.whyustext{
+    position: absolute;
+    top: 50%;
+    left: 26%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings:
+      "slnt" 0;
+    color: #f0f0f0;
+   }
+
+.whyustext h3{
+    font-size: 60px;
+    font-weight: 800;
+    margin: 0%;
+    padding: 0%;
+
+}
+
+.whyustext p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.qualities{
+    position: absolute;
+    top: 50%;
+    left: 76%; /* Adjust this value to position the qualities relative to the image */
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+
+}
+
+    
+
+.qualities .quality{
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    margin: 20px;
+    color:  white;
+    
+
+}
+
+.quality h3{
+    font-weight: 800;
+    font-size: 20px;
+    margin: 0%;
+padding-bottom: 10px;
+
+
+}
+
+.quality p{
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0%;
+    padding: 0%;
+}
+
+.quality img {
+    margin-right: 10px; /* Adjust as needed for spacing between icon and text */
+    width: 30px; /* Adjust the width of the icon as needed */
+    height: auto; /* Ensures the icon scales proportionally */
+    float: left;
+    background-color: transparent;
+}
+
+
+@media (max-width: 1024px) {
+   
+    .why-us img{
+        width: 100%;
+        height: 800px;
+        background-color: #002808;
+        background-blend-mode: multiply;
+        
+    }
+    
+    .whyustext{
+        width: 300px;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-variation-settings:
+          "slnt" 0;
+        color: #f0f0f0;
+       }
+    
+    .whyustext h3{
+        font-size: 30px;
+        font-weight: 800;
+        margin: 0%;
+        padding: 0%;
+    
+    }
+    
+    .whyustext p{
+        font-size: 16px;
+        font-weight: 500;
+        
+       
+
+    
+    }
+
+    .whyustext p br {
+        display: none;
+    }
+    
+    
+    .qualities{
+        position: absolute;
+        top: 50%;
+        left: 76%; /* Adjust this value to position the qualities relative to the image */
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 40%;
+    
+    }
+    
+        
+    
+    .qualities .quality{
+        font-size: 18px;
+        font-family: "Inter", sans-serif;
+        font-weight: 800;
+        margin: 20px;
+        color:  white;
+        
+    
+    }
+    
+    .quality h3{
+        font-weight: 800;
+        font-size: 18px;
+        margin: 0%;
+    padding-bottom: 10px;
+    
+    
+    }
+    
+    .quality p{
+        font-weight: 500;
+        font-size: 14px;
+        margin: 0%;
+        padding: 0%;
+    }
+    
+    .quality img {
+        margin-right: 10px; /* Adjust as needed for spacing between icon and text */
+        width: 30px; /* Adjust the width of the icon as needed */
+        height: auto; /* Ensures the icon scales proportionally */
+        float: left;
+        background-color: transparent;
+    }}
+
+
+
+
+
+@media (max-width: 768px) {
+    .whyustext {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%; /* Adjust width as needed */
+        padding: 20px;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-variation-settings: "slnt" 0;
+        color: #f0f0f0;
+        text-align: left;
+        padding-bottom: 0%;
+        margin-bottom: 0%;
+    }
+    .why-us img{
+    width: 100%;
+    height: 800px;
+    background-color: #002808;
+    background-blend-mode: multiply;
+    
+}
+
+    .whyustext h3 {
+        font-size: 40px; /* Adjust font size for mobile */
+        font-weight: 800;
+        margin: 0;
+        padding: 0;
+    }
+
+    .whyustext p {
+        font-size: 16px; /* Adjust font size for mobile */
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .qualities {
+        position: absolute;
+        top:60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%; /* Adjust width as needed */
+        padding: 20px;
+        font-family: "Inter", sans-serif;
+        font-weight: 800;
+        color: white;
+        text-align: left;
+    }
+
+    .quality img {
+        margin-right: 10px; /* Adjust as needed for spacing between icon and text */
+        width: 30px; /* Adjust the width of the icon as needed */
+        height: auto; /* Ensures the icon scales proportionally */
+        float: left;
+        background-color: transparent;
+    }
+    .qualities .quality {
+        font-size: 16px; /* Adjust font size for mobile */
+        margin: 10px 0;
+    }
+}
+
+
+.responsive-map{
+    width: 100vw; /* Make the iframe span the full width of the viewport */
+    max-width: 100%; /* Ensure it doesn't exceed the container's width */
+    height: 400px; /* Maintain the height */
+    border: 0; /* Remove border */
+
+}
+
+footer {
+
+    background-color: #243D29;
+    color: white;
+    padding: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Adjust the layout for the top row with text and icon */
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.text-with-icon {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.text-with-icon img {
+    width: 12px; /* Adjust icon size as needed */
+    height: 12px;
+    margin-right: 10px; /* Add space between icon and text */
+}
+
+/* Styling for the bottom row and divider */
+.bottom-row {
+    margin: 10px;
+}
+
+.bottom-row a {
+    color: #ffffff; /* Change to your preferred color */
+    text-decoration: none; /* Remove underline */
+}
+
+.bottom-row a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.divider {
+    height: 1px;
+    background-color: #fff;
+    margin: 10px;
+}
+
+.additional-text {
+    margin-bottom: 20px;
+    margin: 10px;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .top-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" type="text/css" href="navbar.css"/>
+        <link rel="stylesheet" type="text/css" href="contact_us.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kings&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <div id="navbar-placeholder"></div>
+        <script>
+            // Load the navbar HTML content
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar-placeholder').innerHTML = data;
+                    // Initialize the mobile menu functionality after navbar is loaded
+                    const hamburgerIcon = document.querySelector('.hamburger-icon');
+                    const mobileMenu = document.querySelector('.mobile-menu');
+    
+                    if (hamburgerIcon) {
+                        hamburgerIcon.addEventListener('click', function() {
+                            mobileMenu.classList.toggle('active');
+                        });
+                    }
+                });
+        </script>
+        <div class = "home-header">
+            <img src="forest2.jpg" >
+            <div class = "header-text">
+               CONTACT US
+            </div>
+        </div>
+        <div class="main-layout">
+           
+            <div class="grid-container">
+                <div class="container">
+                    <div class="title">
+                        <img src="location.png" alt="Icon" class="icon">
+                        <h3>Eco Lumber</h3>
+                    </div>
+                    <p class="text">Block C-1/3, Jalan Selaman 1, Dataran Palma, 69000, Ampang, Selangor Darul Ehsan,
+                        Malaysia.</p>
+                </div>
+                <div class="container">
+                    <div class="title">
+                        <img src="contact.png" alt="Icon" class="icon">
+                        <h3>Phone</h3>
+                    </div>
+                    <p class="text">+603 4270-1298 <br>+603 4270-1498<br>+603-4270-1798 (fax)</p>
+                </div>
+                <div class="container">
+                    <div class="title">
+                        <img src="time.png" alt="Icon" class="icon">
+                        <h3>Opening Hours</h3>
+                    </div>
+                    <p class="text">Monday to Friday, 9:00am - 6:00pm</p>
+                </div>
+                <div class="container">
+                    <div class="title">
+                        <img src="email.png" alt="Icon" class="icon">
+                        <h3>Email</h3>
+                    </div>
+                    <p class="text">admin@eco-lumber.com</p>
+                </div>
+            </div>
+        </div>
+        <iframe class="responsive-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15935.048530499078!2d101.7530035!3d3.1572988!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc370765dd95b3%3A0x23536c3bfa822a08!2sEco%20Lumber%20Sdn%20Bhd!5e0!3m2!1sen!2smy!4v1719154709754!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <footer>
+            <div class="top-row">
+               
+                <div class="text-with-icon">
+                    <img src="location-pin.png" alt="Icon">
+                    <p>Block C-1/3, Jalan Selaman 1,<br>Dataran Palma, 69000, Ampang,<br>Selangor Darul Ehsan,
+                        Malaysia.</p>
+                </div>
+                <div class="text-with-icon">
+                    <img src="phone-call.png" alt="Icon">
+                    <p>+603 4270-1298 <br>+603 4270-1498</p>
+                </div>
+                <div class="text-with-icon">
+                    <img src="emaill.png" alt="Icon">
+                    <p>eco@eco-lumber.com</p>
+                </div>
+                  <div class="text-with-icon">
+                    <img src="clock.png" alt="Icon">
+                    <p>Monday to Friday, 9:00am - 6:00pm</p>
+                </div>
+            </div>
+            <div class="bottom-row">
+                <p>Quick Links: 
+                    <a href="home.html">Home</a> | 
+                    <a href="about_us.html">About Us</a> | 
+                    <a href="gallery.html">Gallery</a> | 
+                    <a href="contact_us.html">Contact Us</a>
+                </p>
+            </div>
+            <div class="divider"></div>
+            <div class="additional-text">
+                <p>Copyright © 2024 Eco Lumber. All Rights Reserved. | Website Design by Elyana</p>
+            </div>
+        </footer>
+    </body>

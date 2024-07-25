@@ -1,0 +1,189 @@
+.home-header{
+    padding-top: 80px; /* Same height as the navbar */
+    position: relative;
+    margin-bottom: 60px;
+    overflow: hidden; /* Ensures that the excess image is hidden */
+
+
+
+}
+
+.home-header img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+.header-text{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    font-size: 50px;
+    font-family: "Kings", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+
+
+    .header-text{
+        text-align: center;
+        display: inline;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        font-size: 30px;
+        font-family: "Kings", cursive;
+        font-weight: 400;
+        font-style: normal;
+
+
+    }}
+
+.main-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-gap: 20px; /* Space between containers */
+    justify-items: center;
+
+}
+
+@media (max-width: 768px) {
+    
+
+    .grid-container {
+        display: grid;
+       width: 100%;
+       grid-template-columns: 1fr;
+    }
+
+}
+
+.container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    width: 270px;
+    height: 140px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    
+}
+
+.title {
+    display: flex;
+    align-items: center; /* Aligns items at the top */
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    color: #243D29;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    margin: 0%;/* Add some space between the icon and the title text */
+    padding: 0%;
+}
+
+
+.text {
+    margin: 0%;    
+    padding: 0%;
+    font-size: 14px;
+    text-align: start;
+    padding-left: 24px;
+}
+
+.responsive-map{
+    margin-top: 40px;
+    width: 100vw; /* Make the iframe span the full width of the viewport */
+    max-width: 100%; /* Ensure it doesn't exceed the container's width */
+    height: 400px; /* Maintain the height */
+    border: 0; /* Remove border */
+
+}
+
+
+/* Footer styling */
+footer {
+    background-color: #243D29;
+    color: white;
+    padding: 20px;
+    font-family: 'Nunito', sans-serif;
+
+
+}
+
+/* Adjust the layout for the top row with text and icon */
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.text-with-icon {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.text-with-icon img {
+    width: 12px; /* Adjust icon size as needed */
+    height: 12px;
+    margin-right: 10px; /* Add space between icon and text */
+}
+
+/* Styling for the bottom row and divider */
+.bottom-row {
+    margin: 10px;
+}
+
+.bottom-row a {
+    color: #ffffff; /* Change to your preferred color */
+    text-decoration: none; /* Remove underline */
+}
+
+.bottom-row a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.divider {
+    height: 1px;
+    background-color: #fff;
+    margin: 10px;
+}
+
+.additional-text {
+    margin-bottom: 20px;
+    margin: 10px;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .top-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}

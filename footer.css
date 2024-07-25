@@ -1,0 +1,81 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Main content to fill the rest of the page */
+.main-content {
+    flex: 1;
+}
+
+/* Footer styling */
+footer {
+    background-color: #243D29;
+    color: white;
+    padding: 20px;
+}
+
+/* Adjust the layout for the top row with text and icon */
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.text-with-icon {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.text-with-icon img {
+    width: 12px; /* Adjust icon size as needed */
+    height: 12px;
+    margin-right: 10px; /* Add space between icon and text */
+}
+
+/* Styling for the bottom row and divider */
+.bottom-row {
+    margin: 10px;
+}
+
+
+.bottom-row a {
+    color: #ffffff; /* Change to your preferred color */
+    text-decoration: none; /* Remove underline */
+}
+
+.bottom-row a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.divider {
+    height: 1px;
+    background-color: #fff;
+    margin: 10px;
+}
+
+.additional-text {
+    margin-bottom: 20px;
+    margin: 10px;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .top-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}

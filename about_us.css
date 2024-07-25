@@ -1,0 +1,740 @@
+.home-header{
+    padding-top: 80px; /* Same height as the navbar */
+    position: relative;
+    overflow: hidden; /* Ensures that the excess image is hidden */
+
+
+
+}
+
+.home-header img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+.header-text{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    font-size: 50px;
+    font-family: "Kings", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  
+    margin-bottom: 100px;
+    background-color: #f1ffef;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+
+
+.title h2{
+    padding-left: 60px;
+    font-family: "Inter", sans-serif;
+padding-right: 180px;
+font-size: 100px;
+    float: left;
+}
+
+.text{padding-right: 20px;}
+
+
+
+  .text p{
+    font-family: "Inter", sans-serif;
+
+    font-size: 20px;
+
+  }
+
+
+  @media (max-width: 1024px) {
+    .title h2{
+        font-size: 70px;
+    }
+    .text p{
+        font-size: 14px;
+    }
+
+    
+}
+
+
+    @media (max-width: 768px) {
+        /* Ensure the title section is centered and stacked */
+        .container {
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            align-items: start; /* Center align items */
+            padding: 0; /* Remove padding */
+            justify-content: flex-start;
+            margin: 0%;
+            height: auto;
+
+        }
+    
+        .title h2 {
+           padding-top: 40px;
+            font-size: 40px; /* Reduce font size */
+            margin: 0; /* Remove margin */
+            white-space: nowrap; /* Ensure text does not wrap */
+            text-overflow: ellipsis; /* Add ellipsis if text overflows */
+           padding-left: 40px;
+           padding-bottom: 0;
+           margin-bottom: 0;
+           
+        }
+    
+        /* Ensure the text section is centered and stacked */
+        .text {
+         
+            text-align: start; /* Center align text */
+        }
+    
+        .text p {
+            padding-left: 40px;
+            font-size: 16px; /* Reduce font size */
+        }
+    }
+
+
+  .whatwedo {   
+    text-align: center;
+margin-bottom: 30px;
+margin-left: 60px;
+     font-size: 50px;
+    font-family: "Kings", cursive;
+    font-weight: 400;
+    font-style: normal
+  }
+
+  .wwdcontainer {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    align-items: center; /* Aligns items to the top */
+    margin: 20px;
+    margin-bottom: 60px;
+}
+
+.description {
+    flex: 1;
+    padding-left: 60px;
+    padding-top: 20px;
+}
+
+.divider {
+    width: 2px;
+    height: 250px;
+    background-color: rgb(3, 27, 0);
+    margin: 0 20px;
+    vertical-align: middle; /* Adjust vertical alignment */
+    position: relative;
+    top: -8px; /* Push the icon upwards */
+}
+
+.details {
+    flex: 2;
+    padding: 20px;
+}
+
+.details h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0%;
+    color: rgb(0, 84, 0);
+padding-bottom: 2px;}
+
+
+.details p {
+    max-width: 90%;
+    font-size: 14px;
+    margin: 0%;
+    padding-bottom: 10px;
+}
+
+
+.description h3 {
+    font-size: 30px;
+    font-weight: 800;
+    color:  rgb(3, 27, 0);
+}
+
+.description p {
+    font-size: 16px;
+;}
+
+.detail-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Add margin between detail-content items */
+}
+
+.detail-content img {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    vertical-align: middle; /* Adjust vertical alignment */
+    position: relative;
+    top: -5px; /* Push the icon upwards */
+}
+
+
+@media (max-width: 768px) {
+
+    .whatwedo {   
+        text-align: start;
+        padding-left: 30px;
+        margin-left: 0%;
+        padding-bottom: 0%;
+        margin-bottom: 0%;
+         font-size: 50px;
+        font-family: "Kings", cursive;
+        font-weight: 400;
+        font-style: normal
+      }
+    .wwdcontainer {
+        margin-top: 0%;
+        padding-top: 0%;
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+        margin-bottom: 40px; /* Reduce bottom margin for spacing */
+        height: 600px;
+    }
+
+    .divider {
+        display: none; /* Hide the divider on mobile */
+    }
+
+    .description, .details {
+        padding: 20px; /* Add padding to both sections */
+        padding-bottom: 0%;
+        margin-bottom: 0%;
+        width: 100%; /* Ensure full width on mobile */
+    }
+
+    .details h3 {
+        padding-top: 0%;
+        margin-top: 0%;
+        font-size: 16px; /* Decrease font size for headings */
+        padding-bottom: 5px; /* Adjust spacing */
+        
+    }
+
+    .details p {
+        font-size: 14px; /* Decrease font size for paragraphs */
+        padding-bottom: 10px; /* Adjust spacing */
+    }
+
+    .description h3 {
+        font-size: 24px; /* Decrease font size for heading */
+    }
+
+    .description p {
+        font-size: 16px; /* Decrease font size for paragraphs */
+    }
+
+    .detail-content {
+        margin-bottom: 8px; /* Adjust margin between detail-content items */
+    }
+
+    .detail-content img {
+        width: 14px; /* Decrease icon size */
+        height: 14px; /* Decrease icon size */
+        margin-right: 8px; /* Adjust margin */
+        position: relative;
+        top: -2px; /* Push the icon upwards */
+    }
+}
+
+.spcontainer {
+    position: relative; /* Establishes the positioning context for the text */
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 100px;
+
+}
+
+.sp {
+    display: block;
+    width: 100%;
+    height: 760px;
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+.moretext {
+    position: absolute; /* Allows text to be positioned over the image */
+    top: 50%; /* Center text vertically */
+    left: 50%; /* Center text horizontally */
+    transform: translate(-50%, -50%); /* Adjusts for the center alignment */
+    padding: 40px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    line-height: 1.2;
+    color: white; /* Ensure text is visible over the image */
+    width: 90%;
+}
+
+.moretext h4 {
+    margin: 0;
+    padding-bottom: 14px;
+    font-size: 22px;
+    font-weight: 900;
+    color: #243D29;
+}
+
+.moretext h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    font-weight: 300;
+    color: #486A4D;
+    line-height: 0.9;
+}
+
+.moretext h3 {
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 12px;
+    font-size: 40px;
+    font-weight: 800;
+    color: #243D29;
+}
+
+.moretext p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+}
+
+
+  @media (max-width: 768px) {
+    .row {
+       width: 90%;
+       grid-template-columns: 1fr;
+
+    }
+
+    .header-text{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        font-size: 30px;
+        font-family: "Kings", cursive;
+        font-weight: 400;
+        font-style: normal;
+
+
+    }
+    
+    .spcontainer {
+        position: relative; /* Establishes the positioning context for the text */
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 100px;
+    
+    }
+    
+    .sp {
+        display: block;
+        width: 100%;
+        height: 1000px;
+        object-fit: cover;
+        opacity: 0.6;
+    }
+    
+
+
+.moretext {
+    position: absolute; /* Allows text to be positioned over the image */
+    top: 50%; /* Center text vertically */
+    left: 50%; /* Center text horizontally */
+    transform: translate(-50%, -50%); /* Adjusts for the center alignment */
+    padding: 40px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    line-height: 1.2;
+    color: white; /* Ensure text is visible over the image */
+    width: 90%;
+}
+
+.moretext h4 {
+    margin: 0;
+    padding-bottom: 14px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #243D29;
+}
+
+.moretext h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-weight: 300;
+    color: #486A4D;
+    line-height: 0.9;
+}
+
+.moretext h3 {
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 12px;
+    font-size: 38px;
+    font-weight: 800;
+    color: #243D29;
+}
+
+.moretext p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+}
+
+
+}
+
+
+.visionandmission{
+    position: relative;
+}
+
+.visionandmission img{
+    height: 400px;
+    width: 100vw;
+}
+
+.vmtext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 80%; /* Increase the width */
+    text-align: center; /* Center align text */
+    color: white;
+}
+
+.vmtext h3{
+    font-size: 50px;
+    font-family: "Kings", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.vmtext p{
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    line-height: 1.5; /* Adjust line height for better readability */
+
+        
+
+}
+
+@media (max-width: 768px) {
+    .vmtext h3{
+        font-size: 40px;
+        font-family: "Kings", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .vmtext p{
+        font-size: 20px;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings: "slnt" 0;
+        line-height: 1.5; /* Adjust line height for better readability */
+    
+            
+    
+    }
+    
+}
+
+.containerr {
+    display: flex;
+    justify-content: center; /* Use space-around if you want to distribute space around the items */
+    align-items: center;
+    height: 400px; /* Increased height to accommodate larger images */
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+}
+
+.box {
+    width: 300px; /* Adjusted to fit the larger image */
+    height: auto; /* Height will adapt to content */
+    margin: 0 10px; /* Reduced side margins for less space between */
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center;
+    text-align: center;
+}
+
+.box img {
+    max-width: 100%; /* Ensure image fits within the box */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain;
+    margin: 0; /* Ensure no margin around image */
+    padding: 0; /* Ensure no padding around image */
+}
+
+.box h3 {
+    margin: 0; /* Remove margin */
+    padding-top: 5px; /* Reduce vertical spacing */
+    font-size: 16px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    color: #243D29;
+}
+
+
+
+@media (max-width: 1024px) {
+    .containerr {
+        margin-bottom: 0px;
+    }
+
+
+}
+
+@media (max-width: 1024px) {
+    .containerr {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center the items horizontally */
+        margin-bottom: 100px; /* Adjust spacing as needed */
+        margin: 0 auto;
+    }
+
+    .box {
+        margin: 0 auto;
+        width: calc(50% - 20px); /* Ensures 2 items per row with some spacing */
+        height: 186px; /* Fixed height for consistency */
+        margin: 10px; /* Space between items */
+      padding-bottom: 40px;
+    }
+    
+    .box img {
+        width: 100%; /* Make image fill the box */
+        height: 100%; /* Ensure image fits the box */
+        object-fit: cover; /* Cover the entire box while maintaining aspect ratio */
+    }
+
+    .ourkeymanagement{
+        padding-top: 180px;
+    }
+}
+
+
+
+
+.ourkeymanagement {   
+
+    margin-top: 40px;
+    text-align: center;
+margin-bottom: 20px;
+margin-left: 60px;
+     font-size: 50px;
+    font-family: "Kings", cursive;
+    font-weight: 400;
+    font-style: normal
+  }
+
+
+/* Ensure the image scales with the container */
+.okm {
+    max-width: 100%; /* Make the image scale down to fit the container */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove any extra space below the image */
+    margin: 0 auto; /* Horizontally centers the container */
+}
+
+
+  /*
+
+  .okm{
+    display: flex;
+justify-content: center;
+align-items: center;  
+    height: 400px;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.okmbox {
+    
+    width: 300px; 
+    height: 300px;
+    background-color: #f0f0f0; 
+    flex-direction: column;
+    margin-left: 50px;
+
+
+}
+
+
+<div class="okm">
+    <div class="okmbox">
+        <div class="okmtext">
+            <img src="lol.jpg">
+            <h3>Loren Ipsum</h3>
+            <h4>Loren Ipsum</h4>
+            <p>Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,</p>
+        </div>
+    </div>
+    <div class="okmbox"></div>
+    <div class="okmbox"></div>
+</div>
+
+
+
+.okmtext{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+font-variation-settings:
+"slnt" 0;
+font-weight: 400;
+margin: 0%;
+padding: 0%;
+}
+
+.okmtext h3 {
+font-size: 30px;
+font-weight: 600;
+margin: 0%;
+padding-top: 20px;
+padding-bottom: 10px;
+}
+
+
+.okmtext h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0%;
+padding-bottom: 10px;
+
+    }
+    
+
+.okmtext p {
+font-size: 14px;
+font-weight: 400;
+margin: 0%;
+padding: 0%;
+
+
+}
+
+.okmbox img {
+    width: 300px; 
+    height: 300px;
+}
+*/
+
+.responsive-map{
+    margin-top: 100px;
+    width: 100vw; 
+    max-width: 100%; 
+    height: 400px;
+    border: 0; 
+
+}
+
+footer {
+
+    background-color: #243D29;
+    color: white;
+    padding: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.text-with-icon {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.text-with-icon img {
+    width: 12px; /* Adjust icon size as needed */
+    height: 12px;
+    margin-right: 10px; /* Add space between icon and text */
+}
+
+/* Styling for the bottom row and divider */
+.bottom-row {
+    margin: 10px;
+}
+
+.bottom-row a {
+    color: #ffffff; /* Change to your preferred color */
+    text-decoration: none; /* Remove underline */
+}
+
+.bottom-row a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.thedivider {
+    height: 1px;
+    background-color: #fff;
+    margin: 10px;
+}
+
+.additional-text {
+    margin-bottom: 20px;
+    margin: 10px;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .top-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+
+        
+    }
+    
+}

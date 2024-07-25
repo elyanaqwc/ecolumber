@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" type="text/css" href="navbar.css"/>
+        <link rel="stylesheet" type="text/css" href="gallery.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kings&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    </head>
+   
+    <body>
+        <div id="navbar-placeholder"></div>
+        <script>
+            // Load the navbar HTML content
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar-placeholder').innerHTML = data;
+                    // Initialize the mobile menu functionality after navbar is loaded
+                    const hamburgerIcon = document.querySelector('.hamburger-icon');
+                    const mobileMenu = document.querySelector('.mobile-menu');
+    
+                    if (hamburgerIcon) {
+                        hamburgerIcon.addEventListener('click', function() {
+                            mobileMenu.classList.toggle('active');
+                        });
+                    }
+                });
+        </script>
+      <div class = "home-header">
+        <img src="dense-forest.jpg" >
+        <div class = "header-text">
+           GALLERY
+        </div>
+        <h3 class="sptext">Photos from Seng Peng Sawmill</h3>
+    </div>
+       <div class="container">
+        <div class="box">
+            <img src="pic3.jpg" alt="Image 1">
+ 
+        </div>
+        <div class="box">
+            <img src="pic8.jpg" alt="Image 2">
+
+        </div>
+        <div class="box">
+            <img src="pic1.jpg" alt="Image 3">
+
+        </div>
+        <div class="box">
+            <img src="pic2.jpg" alt="Image 4">
+
+        </div>
+        <div class="box">
+            <img src="pic9.jpg" alt="Image 5">
+
+        </div>
+        <div class="box">
+            <img src="pic5.jpg" alt="Image 6">
+
+        </div>
+        <div class="box">
+            <img src="pic6.jpg" alt="Image 1">
+ 
+        </div>
+        <div class="box">
+            <img src="pic4.jpg" alt="Image 2">
+
+        </div>
+        <div class="box">
+            <img src="pic7.jpg" alt="Image 3">
+
+        </div>
+        <h3 class="ecotext">Photos from Eco Lumber</h3>
+        <div class="box">
+            <img src="pic10.jpg" alt="Image 4">
+
+        </div>
+        <div class="box">
+            <img src="pic11.jpg" alt="Image 5">
+
+        </div>
+        <div class="box">
+            <img src="pic12.jpg" alt="Image 6">
+
+        </div>
+        
+        <div class="box">
+            <img src="pic16.jpg" alt="Image 2">
+
+        </div>
+        <div class="box">
+            <img src="pic15.jpg" alt="Image 3">
+
+        </div>
+        <div class="box">
+            <img src="pic14.jpg" alt="Image 4">
+
+        </div>
+        <div class="box">
+            <img src="pic17.jpg" alt="Image 5">
+
+        </div>
+        <div class="box">
+            <img src="pic18.jpg" alt="Image 6">
+
+        </div>
+        <div class="box">
+            <img src="eco.jpg" alt="Image 6">
+
+        </div>
+    </div>
+    <iframe class="responsive-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15935.048530499078!2d101.7530035!3d3.1572988!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc370765dd95b3%3A0x23536c3bfa822a08!2sEco%20Lumber%20Sdn%20Bhd!5e0!3m2!1sen!2smy!4v1719154709754!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <footer>
+        <div class="top-row">
+           
+            <div class="text-with-icon">
+                <img src="location-pin.png" alt="Icon">
+                <p>Block C-1/3, Jalan Selaman 1,<br>Dataran Palma, 69000, Ampang,<br>Selangor Darul Ehsan,
+                    Malaysia.</p>
+            </div>
+            <div class="text-with-icon">
+                <img src="phone-call.png" alt="Icon">
+                <p>+603 4270-1298 <br>+603 4270-1498</p>
+            </div>
+            <div class="text-with-icon">
+                <img src="emaill.png" alt="Icon">
+                <p>eco@eco-lumber.com</p>
+            </div>
+              <div class="text-with-icon">
+                <img src="clock.png" alt="Icon">
+                <p>Monday to Friday, 9:00am - 6:00pm</p>
+            </div>
+        </div>
+        <div class="bottom-row">
+            <p>Quick Links: 
+                <a href="home.html">Home</a> | 
+                <a href="about_us.html">About Us</a> | 
+                <a href="gallery.html">Gallery</a> | 
+                <a href="contact_us.html">Contact Us</a>
+            </p>
+        </div>
+        <div class="divider"></div>
+        <div class="additional-text">
+            <p>Copyright © 2024 Eco Lumber. All Rights Reserved. | Website Design by Elyana</p>
+        </div>
+    </footer>
+    
+    </body>
